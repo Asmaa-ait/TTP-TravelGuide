@@ -1,22 +1,119 @@
-.card {
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      padding: 15px;
-      margin-bottom: 30px;
-      background-color: #f9f9f9;
-    }
-    
-    .card img {
-  max-width: 50%;
-  display: block;
-  margin: 0 auto 15px auto; /* top: 0, horizontal: auto (centered), bottom: 15px */
-  border-radius: 8px;
+:root {
+    --nav-height: 50px;
+
+    --main-color: #FFF0DB;
+    --main-panel-color: #D7707C;
+    --contrast-color: #800020;
+    --highlight-color: #AAEEF7;
 }
 
+body {
+    background-color: var(--main-color);
+    padding: 0;
+    margin: 0;
+    margin-top: var(--nav-height);
+}
+
+nav {
+    background-color: var(--contrast-color);
+    height: var(--nav-height);
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--highlight-color);
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    margin-right: 10px;
+}
+
+.page-title {
+    background-image: url("Images/banner.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 500px;
+}
+
+.title-header {
+    text-align: center;
+}
+
+.title-header h1 {
+    font-size: 5vw;
+    margin-bottom: 5px;
+}
+
+.title-header h3 {
+    margin-top: 0;
+    font-style: italic;
+}
+
+.page-content {
+    padding-top: 20px;
+    display: flex;
+}
+
+.third {
+    background-color: var(--main-panel-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    flex: 30%;
+}
+
+.third + .third {
+    margin-left: 0;
+}
+
+.third h2 {
+    margin-top: 0;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+}
     
-    .section-title {
-        font-weight: bold;
-        color: #0077b6;
-        margin-top: 15px;
-        margin-bottom: 5px;
-   }
+.card img {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto 15px auto; /* top: 0, horizontal: auto (centered), bottom: 15px */
+    border-radius: 8px;
+}
+
+.section-title {
+    font-weight: bold;
+    color: #0077b6;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
