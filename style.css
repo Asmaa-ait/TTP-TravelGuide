@@ -1,4 +1,6 @@
 :root {
+    --nav-height: 50px;
+
     --main-color: #FFF0DB;
     --contrast-color: #800020;
     --highlight-color: #AAEEF7;
@@ -8,14 +10,16 @@ body {
     background-color: var(--main-color);
     padding: 0;
     margin: 0;
+    margin-top: var(--nav-height);
 }
 
 nav {
     background-color: var(--contrast-color);
+    height: var(--nav-height);
     position: fixed;
-    height: 50px;
     width: 100%;
     margin: 0;
+    top: 0;
 }
 
 nav ul {
