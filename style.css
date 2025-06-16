@@ -117,3 +117,47 @@ nav a:hover {
     margin-top: 15px;
     margin-bottom: 5px;
 }
+
+        ul,
+        h4 {
+            font-family: 'Roboto', Arial;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Roboto', Arial;
+        }
+
+        .tips-content-container {
+            font-family: 'Roboto', Arial;
+            border: 3px solid brown;
+            border-radius: 8px;
+            padding: 10px;
+            line-height: 28px;
+        }
+
+        .tips-grid-container {
+            display: grid;
+            grid-template-columns: repeat(1, 350px);
+            grid-gap: 16px;
+            justify-content: center;
+        }
+
+
+        @media screen and (width >=768px) {
+            .tips-grid-container {
+                grid-template-columns: repeat(2, 350px);
+            }
+        }
+
+        @media screen and (width >=1300px) {
+            .tips-grid-container {
+                grid-template-columns: repeat(3, 350px);
+            }
+        }
+
+        @media screen and (width >=1440px) {
+            .tips-grid-container {
+                grid-template-columns: repeat(4, 350px);
+            }
+        }
