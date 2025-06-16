@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Tips Page</title>
+    <style>
+        body {
+            background-color: #FFF0DB;
+        }
+
+        ul,
+        h4 {
+            font-family: 'Roboto', Arial;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Roboto', Arial;
+        }
+
+        .tips-content-container {
+            font-family: 'Roboto', Arial;
+            border: 3px solid brown;
+            border-radius: 8px;
+            padding: 10px;
+            line-height: 28px;
+        }
+
+        .tips-grid-container {
+            display: grid;
+            grid-template-columns: repeat(1, 350px);
+            grid-gap: 16px;
+            justify-content: center;
+        }
+
+
+        @media screen and (width >=768px) {
+            .tips-grid-container {
+                grid-template-columns: repeat(2, 350px);
+            }
+        }
+
+        @media screen and (width >=1300px) {
+            .tips-grid-container {
+                grid-template-columns: repeat(3, 350px);
+            }
+        }
+
+        @media screen and (width >=1440px) {
+            .tips-grid-container {
+                grid-template-columns: repeat(4, 350px);
+            }
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <h1 style="text-align: center; font-family: 'Roboto', Arial;">Travel Tips</h1>
+
+
+    <div class="tips-grid-container">
+        <div class="tips-content-container">
+            <h2>Money & Currency</h2>
+            <h4>Currency exchange tips:</h4>
+            <ul>
+                <li>Exchange rates: When traveling certain country have different currency. So is
+                    <strong>IMPORTANT</strong> to check current rates before traveling.
+                </li>
+
+                <li>
+                    Avoid exchanging from airport outlets
+                </li>
+                <li>
+                    Watch for hidden costs
+                </li>
+                <li>
+                    Research the exchange rate
+                </li>
+                <li>
+                    Use local Cash
+                </li>
+                <li>
+                    Check if your credit/debit card works internationally
+                </li>
+            </ul>
+        </div>
+
+        <div class="tips-content-container">
+            <h2>Travel Documents</h2>
+            <h4>Suggested content:</h4>
+            <ul>
+                <li><strong>Passport:</strong> Must be valid for at least 6 months beyond the travel date.</li>
+            </ul>
+            <h4>Visas:</h4>
+            <ul>
+                <li>Check if a visa is needed for your destination.</li>
+                <li>Apply in advance if required.</li>
+            </ul>
+            <p><strong>Photocopies:</strong> Carry digital and physical copies of your documents.</p>
+        </div>
+
+
+        <div class="tips-content-container">
+            <h2>
+                Pack Smart
+            </h2>
+            <h4>Essentials cheklist:</h4>
+            <ul>
+                <li>Clothes appropriate to climate and culture</li>
+                <li>Toiletries(in travel sizes)</li>
+                <li>Chargers, adapters.
+                    <a href="https://www.iec.ch/world-plugs" target="_blank">Find the country adapter</a>
+                </li>
+            </ul>
+            <h4>Packing tips:</h4>
+
+            <ul>
+                <li>
+                    Roll clothes to save spaces
+                </li>
+                <li>
+                    Use compression cubes for packing
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="tips-content-container">
+            <h2>Vaccinations</h2>
+            <h4>Suggested content:</h4>
+            <ul>
+                <li>Routine vaccines: Ensure Hepatitis A and B, flu, etc. are up to date.</li>
+            </ul>
+            <p><strong>COVID-19:</strong> Requirements vary by country.</p>
+            <p><strong>Health kit:</strong> Includes basic meds(pain relievers, anti-diarrheal, band-aids).</p>
+            <p>Check <a href="https://wwwnc.cdc.gov/travel" target="_blank">CDC Travel</a> for region-specific info.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
