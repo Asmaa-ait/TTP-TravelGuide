@@ -1,0 +1,46 @@
+:root {
+    --main-color: #FFF0DB;
+    --contrast-color: #800020;
+    --highlight-color: #AAEEF7;
+}
+
+body {
+    background-color: var(--main-color);
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: var(--contrast-color);
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--highlight-color);
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    margin-right: 10px;
+}
