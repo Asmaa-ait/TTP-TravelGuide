@@ -161,3 +161,58 @@ nav a:hover {
                 grid-template-columns: repeat(4, 350px);
             }
         }
+
+        /* Packing page stuff */
+
+        .packing-body {
+            background-color: #e8cfc3;
+            margin: 0;
+        }
+
+        .packing-banner {
+            margin-top: 100px;
+            background-image:url("Images/packing-banner.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 420px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .packing-banner h1 {
+            font-size: 50px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1rem 2rem;
+            border-radius: 10px;
+        }
+
+        .packing-section {
+            margin-top: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5rem;
+            padding: 2rem;
+        }
+
+        .packing-section h2 {
+            color:  #800020;
+            border-bottom: 2px solid #800020;
+            margin-top: 2rem;
+        }
+
+        .packing-checkbox input[type="checkbox"] {
+            cursor: pointer;
+            transform: scale(1.7);
+            margin-right: 10px;
+        }
+
+        .packing-checkbox label {
+            display: block;
+            margin-bottom: 8px;
+            cursor: pointer;
+            font-size: 30px;
+        }
